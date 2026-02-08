@@ -1,0 +1,7 @@
+{
+  "name": "ack-st-james-koromosho",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
