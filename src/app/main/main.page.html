@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button fill="clear"
+      >Ack St James Koromosho</ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button  fill="outline" shape="round"  [routerLink]="['./home']">Home</ion-button>
+      <ion-button  fill="outline" shape="round" [routerLink]="['./about']">About</ion-button>
+      <ion-button  fill="outline" shape="round" [routerLink]="['./services']">Services</ion-button>
+      <ion-button  fill="outline" shape="round" [routerLink]="['./projects']">Projects</ion-button>
+      <ion-button  fill="outline" shape="round" [routerLink]="['./contacts']">Contacts</ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
+
