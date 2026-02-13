@@ -6,8 +6,10 @@ import { MainPage } from './main.page';
 const routes: Routes = [
   {
     path: '',
-    component: MainPage
-  },
+    component: MainPage,
+    children: [ 
+
+
   {
     path: 'home',
     loadChildren: () => import('../pages/home/pages/home/home.module').then( m => m.HomePageModule)
@@ -27,9 +29,10 @@ const routes: Routes = [
   {
     path: 'contacts',
     loadChildren: () => import('../pages/contacts/pages/contacts/contacts.module').then( m => m.ContactsPageModule)
-  }
-
-];
+  },
+    ]
+     },
+      ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

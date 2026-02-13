@@ -11,10 +11,10 @@ const routes: Routes = [
     redirectTo: 'main',
     pathMatch: 'full'
   },
-  {
-    path: 'navbar',
-    loadChildren: () => import('./pages/navbar/navbar.module').then( m => m.NavbarPageModule)
-  },
+  // {
+  //   path: 'navbar',
+  //   loadChildren: () => import('./pages/navbar/navbar.module').then( m => m.NavbarPageModule)
+  // },
 
 ];
 

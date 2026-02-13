@@ -5,10 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { NavbarComponent } from './navbar.component';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @NgModule({
-  imports: [ CommonModule, FormsModule, IonicModule, RouterLink],
+  imports: [CommonModule, FormsModule, IonicModule, RouterLink, RouterLinkActive],
   declarations: [NavbarComponent ],
   exports: [NavbarComponent ]
 })

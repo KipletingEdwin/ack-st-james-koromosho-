@@ -1,0 +1,15 @@
+
+
+/* navbar.component.scss */
+
+.active-link {
+    /* Change the background and text color when active */
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+    
+    /* Optional: make it pop slightly */
+    font-weight: bold;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+  }
+  
