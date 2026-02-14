@@ -1,0 +1,64 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Give</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="give-hero ion-text-center">
+    <h1>Generosity Changes Lives</h1>
+    <p>Your support helps us serve our community and share the Gospel.</p>
+  </div>
+
+  <ion-grid fixed>
+    <ion-row>
+      <!-- Online Giving Card -->
+      <ion-col size="12" size-md="6">
+        <ion-card class="give-card">
+          <ion-card-header>
+            <ion-icon name="globe-outline" color="primary" class="large-icon"></ion-icon>
+            <ion-card-title>Give Online</ion-card-title>
+            <ion-card-subtitle>Secure & Fast</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Set up a one-time gift or recurring tithe using your debit/credit card or bank account.
+            <ion-button expand="block" color="primary" class="ion-margin-top" (click)="openGivingPortal()">
+              Give Now
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Text/App Giving -->
+      <ion-col size="12" size-md="6">
+        <ion-card class="give-card">
+          <ion-card-header>
+            <ion-icon name="phone-portrait-outline" color="secondary" class="large-icon"></ion-icon>
+            <ion-card-title>Text to Give</ion-card-title>
+            <ion-card-subtitle>Mobile Giving</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Simply text <strong>GIVE</strong> to <strong>(555) 123-4567</strong> to get started with mobile giving.
+            <ion-button expand="block" color="secondary" class="ion-margin-top" href="sms:+15551234567">
+              Text Now
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- Financial Integrity Note -->
+    <ion-row>
+      <ion-col size="12">
+        <div class="integrity-box ion-margin-top ion-text-center">
+          <h3><ion-icon name="shield-checkmark-outline"></ion-icon> Financial Integrity</h3>
+          <p>We are committed to using your gifts wisely and transparently. Annual reports are available upon request.</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

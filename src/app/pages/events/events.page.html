@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Upcoming Events</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="events-header">
+    <h2>What's Happening</h2>
+    <p>Join us for community, worship, and growth.</p>
+  </div>
+
+  <!-- Event List -->
+  <ion-list lines="none">
+    <ion-card *ngFor="let event of upcomingEvents" mode="ios" class="event-card">
+      <ion-row class="ion-no-padding">
+        <!-- Date Badge Column -->
+        <ion-col size="3" class="date-column ion-text-center">
+          <div class="month">{{ event.month }}</div>
+          <div class="day">{{ event.day }}</div>
+        </ion-col>
+
+        <!-- Details Column -->
+        <ion-col size="9">
+          <ion-card-header>
+            <ion-card-title>{{ event.title }}</ion-card-title>
+            <ion-card-subtitle>
+              <ion-icon name="time-outline"></ion-icon> {{ event.time }}
+            </ion-card-subtitle>
+          </ion-card-header>
+          
+          <ion-card-content>
+            <p>{{ event.description }}</p>
+            <div class="location">
+              <ion-icon name="location-outline"></ion-icon> {{ event.location }}
+            </div>
+            
+            <div class="ion-margin-top">
+              <ion-button size="small" fill="outline" (click)="register(event)">
+                Register
+              </ion-button>
+              <ion-button size="small" fill="clear" (click)="addToCalendar(event)">
+                Add to Cal
+              </ion-button>
+            </div>
+          </ion-card-content>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-list>
+</ion-content>

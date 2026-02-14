@@ -8,8 +8,11 @@ const routes: Routes = [
     path: '',
     component: MainPage,
     children: [ 
-
-
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
   {
     path: 'home',
     loadChildren: () => import('../pages/home/pages/home/home.module').then( m => m.HomePageModule)
@@ -19,12 +22,24 @@ const routes: Routes = [
     loadChildren: () => import('../pages/about/pages/about/about.module').then( m => m.AboutPageModule)
   },
   {
-    path: 'services',
-    loadChildren: () => import('../pages/services/pages/services/services.module').then( m => m.ServicesPageModule)
+    path: 'visit',
+    loadChildren: () => import('../pages/visit/visit.module').then( m => m.VisitPageModule)
   },
   {
-    path: 'projects',
-    loadChildren: () => import('../pages/projects/pages/projects/projects.module').then( m => m.ProjectsPageModule)
+    path: 'sermons',
+    loadChildren: () => import('../pages/sermons/sermons.module').then( m => m.SermonsPageModule)
+  },
+  {
+    path: 'ministries',
+    loadChildren: () => import('../pages/ministries/ministries.module').then( m => m.MinistriesPageModule)
+  },
+  {
+    path: 'events',
+    loadChildren: () => import('../pages/events/events.module').then( m => m.EventsPageModule)
+  },
+  {
+    path: 'donate',
+    loadChildren: () => import('../pages/donate/donate.module').then( m => m.DonatePageModule)
   },
   {
     path: 'contacts',

@@ -1,39 +1,81 @@
 
-<!-- 
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>contacts</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Contact Us</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">contacts</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content> -->
+<ion-content [fullscreen]="true" class="ion-padding">
 
+  <div class="contact-hero">
+    <h1>We'd Love to Hear From You</h1>
+    <p>Whether you have a question or a prayer request, our team is here for you.</p>
+  </div>
 
+  <ion-grid>
+    <ion-row>
+  
+      <ion-col size-lg="6" size-md="12">
+        <ion-list lines="none">
+          <ion-item>
+            <ion-icon name="location-outline" slot="start"></ion-icon>
+            <ion-label>
+              <h2>Visit Us</h2>
+              <p>123 Church Lane, Cityville, ST 12345</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="call-outline" slot="start"></ion-icon>
+            <ion-label>
+              <h2>Call Us</h2>
+              <p>(555) 012-3456</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
 
-<ion-header>
-  <ion-toolbar>
+     
+        <div class="map-container">
+          <iframe 
+            src="
+            " 
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+      </ion-col>
 
-    <ion-buttons slot="start">
-      <ion-button>Contacts</ion-button>
-    </ion-buttons>
+  
+      <ion-col size-lg="6" size-md="12">
+        <form [formGroup]="contactForm" (ngSubmit)="sendInquiry()">
+          <ion-item fill="outline" mode="md" class="ion-margin-bottom">
+            <ion-label position="floating">Full Name</ion-label>
+            <ion-input formControlName="name"></ion-input>
+          </ion-item>
 
-    <ion-buttons slot="end">
-      <ion-button>SETTINGS</ion-button>
-      <ion-button fill="outline" shape="round" (click)="goBack()">Back</ion-button>
-    </ion-buttons>
+          <ion-item fill="outline" mode="md" class="ion-margin-bottom">
+            <ion-label position="floating">Email Address</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
 
-  </ion-toolbar>
-</ion-header>
+          <ion-item fill="outline" mode="md" class="ion-margin-bottom">
+            <ion-label position="floating">How can we help?</ion-label>
+            <ion-select formControlName="reason">
+              <ion-select-option value="general">General Inquiry</ion-select-option>
+              <ion-select-option value="prayer">Prayer Request</ion-select-option>
+              <ion-select-option value="visit">Planning a Visit</ion-select-option>
+            </ion-select>
+          </ion-item>
 
+          <ion-item fill="outline" mode="md" class="ion-margin-bottom">
+            <ion-label position="floating">Message</ion-label>
+            <ion-textarea rows="4" formControlName="message"></ion-textarea>
+          </ion-item>
 
-
-<ion-content>
-  <h1>Contacts</h1>
+          <ion-button expand="block" type="submit" [disabled]="!contactForm.valid">
+            Send Message
+          </ion-button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 

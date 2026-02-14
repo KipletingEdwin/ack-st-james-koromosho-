@@ -1,0 +1,29 @@
+
+.give-hero {
+    padding: 40px 10px;
+    h1 { font-weight: 700; color: var(--ion-color-primary); }
+    p { font-size: 1.1rem; color: var(--ion-color-medium); }
+  }
+  
+  .give-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  
+    .large-icon {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .integrity-box {
+    padding: 20px;
+    background: var(--ion-color-light);
+    border-radius: 12px;
+    ion-icon { vertical-align: middle; }
+  }
+  
