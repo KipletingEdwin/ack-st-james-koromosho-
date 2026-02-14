@@ -1,13 +1,90 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>visit</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">visit</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+<ion-content class="visit-page">
+  <!-- Hero Section -->
+  <section class="visit-hero">
+    <div class="hero-overlay">
+      <h1>Plan Your Visit</h1>
+      <p>We can't wait to meet you this Sunday!</p>
+    </div>
+  </section>
+
+  <ion-grid fixed class="ion-padding">
+    <!-- Section 1: Times & Location -->
+    <ion-row class="ion-align-items-center info-section">
+      <ion-col size="12" size-md="6">
+        <div class="section-title">
+          <ion-icon name="time-outline" color="primary"></ion-icon>
+          <h2>When & Where</h2>
+        </div>
+        <p><strong>Sunday Services:</strong> 8:00 AM & 10:30 AM</p>
+        <p><strong>Address:</strong> 123 Church Lane, Nakuru, Kenya</p>
+        <ion-button fill="outline" (click)="openMap()">Get Directions</ion-button>
+      </ion-col>
+      <ion-col size="12" size-md="6">
+        <div class="map-placeholder">
+          <!-- Embed Google Map here -->
+          <ion-icon name="map-outline"></ion-icon>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- Section 2: What to Expect (The "Anxiety Reducer") -->
+    <ion-row class="ion-margin-top">
+      <ion-col size="12">
+        <ion-card mode="ios" class="expect-card">
+          <ion-card-header>
+            <ion-card-title>What should I expect?</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list lines="none">
+              <ion-item>
+                <ion-icon name="shirt-outline" slot="start"></ion-icon>
+                <ion-label>
+                  <h3>What do I wear?</h3>
+                  <p>You’ll find everything from Sunday best to casual wear. Wear what makes you comfortable!</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="car-outline" slot="start"></ion-icon>
+                <ion-label>
+                  <h3>Where do I park?</h3>
+                  <p>We have a dedicated car park right next to the sanctuary with greeters to guide you.</p>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-icon name="musical-notes-outline" slot="start"></ion-icon>
+                <ion-label>
+                  <h3>Worship Style</h3>
+                  <p>Our services include a mix of contemporary songs and traditional hymns.</p>
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- Section 3: Families & Kids -->
+    <ion-row class="ion-margin-top info-section">
+      <ion-col size="12" size-md="5">
+        <img src="assets/images/kids-ministry.jpg" class="rounded-img" />
+      </ion-col>
+      <ion-col size="12" size-md="7">
+        <h2>Bringing the Family?</h2>
+        <p>Your children's safety is our priority. We have a secure check-in process for our Sunday School.</p>
+        <ion-list lines="full">
+          <ion-item>
+            <ion-label>1. Arrive 15 mins early to register.</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>2. Meet our background-checked volunteers.</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>3. Enjoy the service knowing they are safe and learning.</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

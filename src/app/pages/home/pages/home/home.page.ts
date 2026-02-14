@@ -20,6 +20,10 @@ export class HomePage implements OnInit {
     this.router.navigate(['./main'])
   }
 
+  goToSermons() {
+    this.router.navigate(['/main/sermons']);
+  }
+
   features = [
     {
       icon: 'book-outline',

@@ -13,4 +13,10 @@ export class VisitPage implements OnInit {
   ngOnInit() {
   }
 
+  openMap() {
+    // Replace with your church's actual coordinates
+    const address = 'ACK St James Koromosho Nakuru';
+    window.open(`https://www.google.com{address}`, '_blank');
+  }
+
 }

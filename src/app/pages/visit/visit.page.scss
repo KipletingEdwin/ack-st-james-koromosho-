@@ -1,0 +1,82 @@
+.visit-page {
+    --background: #ffffff;
+  
+    // Hero Section
+    .visit-hero {
+      height: 40vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                  url('/assets/images/church-hall.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+  
+      h1 { 
+        font-size: 2.8rem; 
+        font-weight: 800; 
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
+    }
+  
+    // Common Info Sections
+    .info-section {
+      padding: 40px 0;
+      
+      .section-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        
+        ion-icon { font-size: 28px; margin-right: 12px; }
+        h2 { font-weight: 700; margin: 0; color: var(--ion-color-dark); }
+      }
+      
+      p { color: var(--ion-color-step-600); line-height: 1.6; }
+    }
+  
+    // Interactive Map Placeholder
+    .map-placeholder {
+      height: 250px;
+      background: var(--ion-color-light);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed var(--ion-color-medium);
+      
+      ion-icon { font-size: 64px; color: var(--ion-color-medium); }
+    }
+  
+    // "What to Expect" Card Styling
+    .expect-card {
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      margin: 0;
+      background: #fff;
+  
+      ion-card-title { font-weight: 700; color: var(--ion-color-primary); }
+  
+      ion-item {
+        --padding-start: 0;
+        margin-bottom: 10px;
+        
+        ion-icon { font-size: 24px; color: var(--ion-color-secondary); }
+        h3 { font-weight: 600; font-size: 1.1rem; }
+        p { font-size: 0.95rem; }
+      }
+    }
+  
+    // Images
+    .rounded-img {
+      border-radius: 20px;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  }
+  
