@@ -35,3 +35,19 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+ion-toolbar {
+    --background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    --border-style: none;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  // Make the titles stand out
+  ion-title {
+    font-size: 1.2rem;
+    color: var(--ion-color-dark);
+  }
+  
