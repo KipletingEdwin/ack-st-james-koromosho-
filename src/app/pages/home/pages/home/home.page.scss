@@ -1,66 +1,96 @@
-.home-hero {
-  height: 60vh;
-  background: url('/assets/images/church-outside.jpg') center/cover no-repeat;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+// .home-hero {
+//   height: 60vh;
+//   background: url('/assets/images/church-outside.jpg') center/cover no-repeat;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-align: center;
 
-  .hero-overlay {
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
+//   .hero-overlay {
+//     background: rgba(0, 0, 0, 0.4);
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     padding: 20px;
+//     color: white;
+
+//     h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+//     p { font-size: 1.2rem; margin-bottom: 25px; }
+//   }
+// }
+
+// .service-banner {
+//   background: var(--ion-color-step-100);
+//   padding: 10px 0;
+//   border-bottom: 1px solid #eee;
+//   p { margin: 0; color: var(--ion-color-dark); font-size: 0.9rem; }
+//   ion-icon { vertical-align: middle; margin-right: 5px; color: var(--ion-color-primary); }
+// }
+
+// .nav-card {
+//   background: white;
+//   border-radius: 12px;
+//   padding: 20px 10px;
+//   text-align: center;
+//   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   transition: transform 0.2s;
+
+//   &:active { transform: scale(0.95); }
+//   ion-icon { font-size: 32px; margin-bottom: 8px; }
+//   span { font-weight: 600; font-size: 0.9rem; color: var(--ion-color-dark); }
+// }
+
+// .section-header {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   h2 { font-weight: 700; font-size: 1.4rem; }
+// }
+
+// .latest-message-card {
+//   margin: 0;
+//   position: relative;
+//   img { width: 100%; height: 200px; object-fit: cover; }
+//   .play-overlay {
+//     position: absolute;
+//     top: 35%; left: 50%;
+//     transform: translate(-50%, -50%);
+//     ion-icon { font-size: 60px; color: white; opacity: 0.8; }
+//   }
+// }
+
+
+
+
+
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('/assets/hero-bg.jpg') center/cover no-repeat;
+  color: white;
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .buttons {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    color: white;
-
-    h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 5px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-    p { font-size: 1.2rem; margin-bottom: 25px; }
+    gap: 12px;
   }
 }
 
-.service-banner {
-  background: var(--ion-color-step-100);
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  p { margin: 0; color: var(--ion-color-dark); font-size: 0.9rem; }
-  ion-icon { vertical-align: middle; margin-right: 5px; color: var(--ion-color-primary); }
-}
-
-.nav-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px 10px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s;
-
-  &:active { transform: scale(0.95); }
-  ion-icon { font-size: 32px; margin-bottom: 8px; }
-  span { font-weight: 600; font-size: 0.9rem; color: var(--ion-color-dark); }
-}
-
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  h2 { font-weight: 700; font-size: 1.4rem; }
-}
-
-.latest-message-card {
-  margin: 0;
-  position: relative;
-  img { width: 100%; height: 200px; object-fit: cover; }
-  .play-overlay {
-    position: absolute;
-    top: 35%; left: 50%;
-    transform: translate(-50%, -50%);
-    ion-icon { font-size: 60px; color: white; opacity: 0.8; }
-  }
-}
