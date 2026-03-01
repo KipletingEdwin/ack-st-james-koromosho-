@@ -1,13 +1,40 @@
 
 
-.active-link {
-    /* Change the background and text color when active */
-    --background: var(--ion-color-primary);
-    --color: var(--ion-color-primary-contrast);
+// .active-link {
+//     --background: var(--ion-color-primary);
+//     --color: var(--ion-color-primary-contrast);
     
-    /* Optional: make it pop slightly */
-    font-weight: bold;
-    transform: scale(1.05);
-    transition: 0.2s ease-in-out;
-  }
+//     font-weight: bold;
+//     transform: scale(1.05);
+//     transition: 0.2s ease-in-out;
+//   }
+
+
+ion-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-nav {
+  //position: absolute;
+  //left: 50%;
+  //transform: translateX(-50%);
+  display: flex;
+  //gap: 12px;
+  //background-color: red;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.active-link {
+  border-bottom: 2px solid var(--ion-color-primary);
+  border-radius: 0;
+}
+
   
